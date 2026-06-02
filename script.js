@@ -57,3 +57,34 @@ function mostrarPromo(){
     }
 
 }
+const imagenes = document.querySelectorAll(".galeria img");
+const visor = document.getElementById("visor");
+const imgGrande = document.getElementById("imgGrande");
+const cerrar = document.getElementById("cerrar");
+
+imagenes.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        visor.style.display = "flex";
+        imgGrande.src = img.src;
+
+    });
+
+});
+
+cerrar.addEventListener("click", () => {
+
+    visor.style.display = "none";
+
+});
+// MENÚ HAMBURGUESA
+
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+
+    menu.classList.toggle("activo");
+
+});
