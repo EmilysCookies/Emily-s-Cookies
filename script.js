@@ -1,3 +1,5 @@
+alert("JS cargado");
+
 // FRASES ALEATORIAS
 
 const frases = [
