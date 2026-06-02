@@ -1,5 +1,3 @@
-alert("JS cargado");
-
 // FRASES ALEATORIAS
 
 const frases = [
@@ -15,79 +13,89 @@ window.addEventListener("load", () => {
     // FRASE ALEATORIA
     const frase = document.getElementById("frase");
 
-    if(frase){
-        let numero = Math.floor(Math.random() * frases.length);
+    if (frase) {
+        const numero = Math.floor(Math.random() * frases.length);
         frase.textContent = frases[numero];
     }
 
     // AÑO AUTOMÁTICO
     const anio = document.getElementById("anio");
 
-    if(anio){
+    if (anio) {
         anio.textContent = new Date().getFullYear();
-    }
-
-    // BOTÓN VOLVER ARRIBA
-    const botonArriba = document.getElementById("arriba");
-
-    if(botonArriba){
-
-        botonArriba.addEventListener("click", () => {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
-        });
-
     }
 
 });
 
 // PROMOCIÓN
 
-function mostrarPromo(){
+function mostrarPromo() {
 
     const promo = document.getElementById("promoEspecial");
 
-    if(promo){
+    if (promo) {
 
         promo.innerHTML =
-        "🎉 Promoción especial: Compra 5 galletas y recibe 1 GRATIS.";
+            "🎉 Promoción especial: Compra 5 galletas y recibe 1 GRATIS.";
 
     }
 
 }
+
+// BOTÓN VOLVER ARRIBA
+
+const botonArriba = document.getElementById("arriba");
+
+if (botonArriba) {
+
+    botonArriba.addEventListener("click", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
+
+// GALERÍA
+
 const imagenes = document.querySelectorAll(".galeria img");
 const visor = document.getElementById("visor");
 const imgGrande = document.getElementById("imgGrande");
 const cerrar = document.getElementById("cerrar");
 
-imagenes.forEach(img => {
+if (visor && imgGrande && cerrar) {
 
-    img.addEventListener("click", () => {
+    imagenes.forEach(img => {
 
-        visor.style.display = "flex";
-        imgGrande.src = img.src;
+        img.addEventListener("click", () => {
+
+            visor.style.display = "flex";
+            imgGrande.src = img.src;
+
+        });
 
     });
 
-});
+    cerrar.addEventListener("click", () => {
 
-cerrar.addEventListener("click", () => {
+        visor.style.display = "none";
 
-    visor.style.display = "none";
+    });
 
-});
+}
+
+// MENÚ HAMBURGUESA
+
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 
-if(menuBtn && menu){
+if (menuBtn && menu) {
 
     menuBtn.addEventListener("click", () => {
 
-        alert("boton funciona");
         menu.classList.toggle("activo");
 
     });
