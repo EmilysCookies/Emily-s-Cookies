@@ -14,19 +14,40 @@
 <body>
 
     <header>
-        <h1>🍪 Emily's Cookies</h1>
 
-        <p id="frase"></p>
+    <h1>🍪 Emily's Cookies</h1>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#productos">Productos</a>
-            <a href="#promociones">Promociones</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+    <p id="frase"></p>
 
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+</header>
+
+<section class="eslogan">
+
+    <img src="imagenes/propaganda.jpeg"
+         alt="propaganda"
+         class="propaganda-img"
+         id="propaganda">
+
+</section>
+
+</header>
+</header>
     <section class="hero" id="inicio">
         <h2>Galletas Hechas con Amor</h2>
 
@@ -80,6 +101,28 @@
         </div>
 
     </section>
+    <section id="destacado">
+
+        <h2 class="titulo">🍪 Producto Estrella</h2>
+
+        <div class="destacado">
+
+            <img src="imagenes/redd.jpeg" alt="Red Velvet">
+
+            <div>
+                <h3>Red Velvet</h3>
+
+                <p>
+                Nuestra galleta más popular.
+                Suave, deliciosa y con un sabor único.
+                </p>
+
+                <h2>$30 MXN</h2>
+            </div>
+
+        </div>
+
+    </section>
 
     <section class="promociones" id="promociones">
 
@@ -119,23 +162,76 @@
 
     </section>
 
-    <section id="galeria">
+   <section id="galeria">
 
-        <h2 class="titulo">Galería</h2>
+    <h2 class="titulo">Galería</h2>
 
-        <div class="galeria">
+    <div class="galeria">
 
-            <img src="imagenes/imagendechispas.jpeg" alt="Galleta 1">
+        <img src="imagenes/chocochispas1.jpeg" alt="Galleta">
+        <img src="imagenes/red2.jpeg" alt="Galleta">
+        <img src="imagenes/red3.jpeg" alt="Galleta">
+        <img src="imagenes/imagen2.jpeg" alt="Galleta">
+        <img src="imagenes/redd.jpeg" alt="Galleta">
+        <img src="imagenes/imagen1.jpeg" alt="Galleta">
+        <img src="imagenes/imagendechispas.jpeg" alt="Galleta">
 
-            <img src="imagenes/imagen2.jpeg" alt="Galleta 2">
 
-            <img src="imagenes/logo.jpeg" alt="Galleta 3">
+    </div>
 
-            <img src="imagenes/imagendechispas.jpeg" alt="Galleta 4">
+</section>
+        <section id="porque">
+
+    <h2 class="titulo">¿Por qué elegir Emily's Cookies?</h2>
+
+    <div class="beneficios">
+
+        <div>
+            🍪 Ingredientes de calidad
+        </div>
+
+        <div>
+            ❤️ Hechas con amor
+        </div>
+
+        <div>
+            🚚 Entregas rápidas
+        </div>
+
+        <div>
+            ⭐ Clientes satisfechos
+        </div>
+
+    </div>
+
+</section>
+    <section id="resenas">
+
+        <h2 class="titulo">Opiniones de Nuestros Clientes</h2>
+
+        <div class="resenas">
+
+        <div class="resena">
+            <h3>⭐⭐⭐⭐⭐</h3>
+             <p>"Las mejores galletas que he probado."</p>
+             <strong>- María</strong>
+            </div>
+
+            <div class="resena">
+             <h3>⭐⭐⭐⭐⭐</h3>
+             <p>"Perfectas para acompañar el café."</p>
+             <strong>- Juan</strong>
+            </div>
+
+            <div class="resena">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"Volveré a comprar sin duda."</p>
+                <strong>- Sofía</strong>
+            </div>
 
         </div>
 
-    </section>
+</section>
 
     <section id="contacto">
 
@@ -184,6 +280,10 @@
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
+    <div id="visor" class="visor">
+    <span id="cerrar">&times;</span>
+    <img id="imgGrande">
+</div>
 
 </body>
 
