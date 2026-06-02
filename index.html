@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emily's Cookies</title>
+
+    <link rel="icon" href="imagenes/logo.jpeg">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+    <h1>🍪 Emily's Cookies</h1>
+
+    <p id="frase"></p>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+</header>
+
+<section class="eslogan">
+
+    <img src="imagenes/propaganda.jpeg"
+         alt="propaganda"
+         class="propaganda-img"
+         id="propaganda">
+
+</section>
+
+</header>
+</header>
+    <section class="hero" id="inicio">
+        <h2>Galletas Hechas con Amor</h2>
+
+        <p>
+            Descubre nuestros deliciosos sabores preparados con ingredientes de calidad.
+        </p>
+
+        <a class="btn"
+           href="https://wa.me/527445366265"
+           target="_blank">
+            Pedir por WhatsApp
+        </a>
+    </section>
+
+    <section id="productos">
+
+        <h2 class="titulo">Nuestros Productos</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="imagenes/imagendechispas.jpeg" alt="Galleta de Chocolate">
+
+                <div class="card-content">
+                    <h3>Chocolate</h3>
+                    <p>Galleta suave con chispas de chocolate.</p>
+                    <p class="precio">$25 MXN</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/logo.jpeg" alt="Galleta de Avena">
+
+                <div class="card-content">
+                    <h3>Avena</h3>
+                    <p>Perfecta para acompañar tu café.</p>
+                    <p class="precio">$25 MXN</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/imagen2.jpeg" alt="Galleta Red Velvet">
+
+                <div class="card-content">
+                    <h3>Red Velvet</h3>
+                    <p>Un sabor único y delicioso.</p>
+                    <p class="precio">$30 MXN</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="destacado">
+
+        <h2 class="titulo">🍪 Producto Estrella</h2>
+
+        <div class="destacado">
+
+            <img src="imagenes/redd.jpeg" alt="Red Velvet">
+
+            <div>
+                <h3>Red Velvet</h3>
+
+                <p>
+                Nuestra galleta más popular.
+                Suave, deliciosa y con un sabor único.
+                </p>
+
+                <h2>$30 MXN</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="promociones" id="promociones">
+
+        <h2 class="titulo">Promociones</h2>
+
+        <p class="promo">🍪 Promociones próximamente</p>
+        <p class="promo">🍪 Mantente atento a nuestras redes</p>
+        <p class="promo">🍪 Nuevas ofertas cada semana</p>
+
+        <button class="btn" onclick="mostrarPromo()">
+            Ver promoción especial
+        </button>
+
+        <p id="promoEspecial"></p>
+
+    </section>
+
+    <section id="nosotros">
+
+        <h2 class="titulo">Nuestra Historia</h2>
+
+        <div class="historia">
+
+            <p>
+                Emily's Cookies nació con la idea de compartir galletas
+                artesanales elaboradas con ingredientes de calidad y mucho cariño.
+            </p>
+
+            <br>
+
+            <p>
+                Nuestro objetivo es endulzar cada momento especial con sabores
+                únicos y una experiencia deliciosa para cada cliente.
+            </p>
+
+        </div>
+
+    </section>
+
+   <section id="galeria">
+
+    <h2 class="titulo">Galería</h2>
+
+    <div class="galeria">
+
+        <img src="imagenes/chocochispas1.jpeg" alt="Galleta">
+        <img src="imagenes/red2.jpeg" alt="Galleta">
+        <img src="imagenes/red3.jpeg" alt="Galleta">
+        <img src="imagenes/imagen2.jpeg" alt="Galleta">
+        <img src="imagenes/redd.jpeg" alt="Galleta">
+        <img src="imagenes/imagen1.jpeg" alt="Galleta">
+        <img src="imagenes/imagendechispas.jpeg" alt="Galleta">
+
+
+    </div>
+
+</section>
+        <section id="porque">
+
+    <h2 class="titulo">¿Por qué elegir Emily's Cookies?</h2>
+
+    <div class="beneficios">
+
+        <div>
+            🍪 Ingredientes de calidad
+        </div>
+
+        <div>
+            ❤️ Hechas con amor
+        </div>
+
+        <div>
+            🚚 Entregas rápidas
+        </div>
+
+        <div>
+            ⭐ Clientes satisfechos
+        </div>
+
+    </div>
+
+</section>
+    <section id="resenas">
+
+        <h2 class="titulo">Opiniones de Nuestros Clientes</h2>
+
+        <div class="resenas">
+
+        <div class="resena">
+            <h3>⭐⭐⭐⭐⭐</h3>
+             <p>"Las mejores galletas que he probado."</p>
+             <strong>- María</strong>
+            </div>
+
+            <div class="resena">
+             <h3>⭐⭐⭐⭐⭐</h3>
+             <p>"Perfectas para acompañar el café."</p>
+             <strong>- Juan</strong>
+            </div>
+
+            <div class="resena">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"Volveré a comprar sin duda."</p>
+                <strong>- Sofía</strong>
+            </div>
+
+        </div>
+
+</section>
+
+    <section id="contacto">
+
+        <h2 class="titulo">Contacto</h2>
+
+        <div class="contacto-info">
+
+            <p>
+                <strong>WhatsApp:</strong>
+                +52 744 536 6265
+            </p>
+
+            <p>
+                <strong>Instagram:</strong>
+                <a href="https://www.instagram.com/olagalletas_html"
+                   target="_blank">
+                    @olagalletas_html
+                </a>
+            </p>
+
+            <p>
+                <strong>Horario:</strong>
+                Lunes a Domingo de 9:00 AM a 8:00 PM
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>
+            © <span id="anio"></span>
+            Emily's Cookies | Todos los derechos reservados
+        </p>
+    </footer>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button id="arriba">⬆</button>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/527445366265"
+       class="whatsapp"
+       target="_blank">
+        💬
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <div id="visor" class="visor">
+    <span id="cerrar">&times;</span>
+    <img id="imgGrande">
+</div>
+
+</body>
+
+</html>
