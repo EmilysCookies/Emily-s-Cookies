@@ -1,4 +1,3 @@
-stilos · CSS
 /* RESET */
 * {
     margin: 0;
@@ -7,13 +6,13 @@ stilos · CSS
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
- 
+
 /* GENERAL */
 body {
     background-color: #fff5f7;
     color: #333;
 }
- 
+
 /* HEADER */
 header {
     background-color: #ffb6c1;
@@ -25,54 +24,54 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: 0.4s;
 }
- 
+
 header h1 {
     color: #6b2d2d;
     margin-bottom: 10px;
 }
- 
+
 #frase {
     color: #6b2d2d;
     font-style: italic;
     margin-bottom: 10px;
 }
- 
+
 /* MENÚ DESKTOP */
 nav {
     margin-top: 10px;
 }
- 
+
 .nav-list {
     list-style: none;
     display: flex;
     gap: 15px;
     justify-content: center;
 }
- 
+
 .nav-list a {
     text-decoration: none;
     color: #6b2d2d;
     font-weight: bold;
     transition: 0.3s;
 }
- 
+
 .nav-list a:hover {
     color: white;
 }
- 
+
 /* BOTONES HAMBURGUESA — ocultos en desktop */
 .abrir-menu,
 .cerrar-menu {
     display: none;
 }
- 
+
 /* ESLOGAN / PROPAGANDA */
 .eslogan {
     text-align: center;
     padding: 30px 20px;
     background: #ffb6c1;
 }
- 
+
 .propaganda-img {
     display: block;
     margin: 10px auto;
@@ -81,25 +80,25 @@ nav {
     border-radius: 15px;
     transition: 0.4s;
 }
- 
+
 /* HERO */
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
- 
+
 .hero h2 {
     font-size: 3rem;
     color: #6b2d2d;
     margin-bottom: 20px;
 }
- 
+
 .hero p {
     font-size: 1.2rem;
     max-width: 700px;
     margin: auto;
 }
- 
+
 /* BOTONES GENERALES */
 .btn {
     display: inline-block;
@@ -115,24 +114,24 @@ nav {
     font-size: 1rem;
     transition: 0.3s;
 }
- 
+
 .btn:hover {
     background: #1ebe5d;
     transform: scale(1.05);
 }
- 
+
 /* SECCIONES */
 section {
     padding: 70px 20px;
 }
- 
+
 .titulo {
     text-align: center;
     color: #6b2d2d;
     margin-bottom: 40px;
     font-size: 2rem;
 }
- 
+
 /* PRODUCTOS */
 .productos {
     display: flex;
@@ -140,7 +139,7 @@ section {
     gap: 25px;
     flex-wrap: wrap;
 }
- 
+
 .card {
     width: 280px;
     background: white;
@@ -150,39 +149,39 @@ section {
     transition: 0.3s;
     animation: aparecer 1s ease;
 }
- 
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
- 
+
 .card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
     transition: 0.4s;
 }
- 
+
 .card:hover img {
     transform: scale(1.15);
 }
- 
+
 .card-content {
     padding: 20px;
     text-align: center;
 }
- 
+
 .card-content h3 {
     margin-bottom: 10px;
 }
- 
+
 .precio {
     color: #d35400;
     font-size: 1.3rem;
     font-weight: bold;
     margin-top: 15px;
 }
- 
+
 /* PRODUCTO DESTACADO */
 .destacado {
     display: flex;
@@ -191,31 +190,31 @@ section {
     gap: 30px;
     flex-wrap: wrap;
 }
- 
+
 .destacado img {
     width: 300px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
- 
+
 /* PROMOCIONES */
 .promociones {
     background: #ffe4ea;
     text-align: center;
 }
- 
+
 .promo {
     margin: 20px;
     font-size: 1.2rem;
     font-weight: bold;
 }
- 
+
 #promoEspecial {
     margin-top: 20px;
     font-weight: bold;
     color: #6b2d2d;
 }
- 
+
 /* NOSOTROS */
 #nosotros {
     max-width: 900px;
@@ -223,11 +222,11 @@ section {
     text-align: center;
     line-height: 1.8;
 }
- 
+
 #nosotros p {
     font-size: 1.1rem;
 }
- 
+
 /* GALERÍA */
 .galeria {
     display: grid;
@@ -236,7 +235,7 @@ section {
     max-width: 1200px;
     margin: auto;
 }
- 
+
 .galeria img {
     width: 100%;
     height: 300px;
@@ -248,13 +247,13 @@ section {
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     animation: aparecer 1s ease;
 }
- 
+
 .galeria img:hover {
     transform: scale(1.05);
     filter: brightness(105%);
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
- 
+
 /* ¿POR QUÉ ELEGIRNOS? */
 .beneficios {
     display: flex;
@@ -264,14 +263,14 @@ section {
     font-size: 1.1rem;
     font-weight: bold;
 }
- 
+
 .beneficios div {
     background: white;
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
- 
+
 /* RESEÑAS */
 .resenas {
     display: flex;
@@ -279,7 +278,7 @@ section {
     gap: 20px;
     flex-wrap: wrap;
 }
- 
+
 .resena {
     background: white;
     width: 280px;
@@ -290,30 +289,30 @@ section {
     transition: 0.3s;
     animation: aparecer 1s ease;
 }
- 
+
 .resena:hover {
     transform: translateY(-8px);
 }
- 
+
 /* CONTACTO */
 #contacto {
     text-align: center;
 }
- 
+
 #contacto p {
     margin: 15px 0;
     font-size: 1.1rem;
 }
- 
+
 #contacto a {
     color: #d35400;
     text-decoration: none;
 }
- 
+
 #contacto a:hover {
     text-decoration: underline;
 }
- 
+
 /* ANIMACIÓN */
 @keyframes aparecer {
     from {
@@ -325,7 +324,7 @@ section {
         transform: translateY(0);
     }
 }
- 
+
 /* BOTÓN VOLVER ARRIBA */
 #arriba {
     position: fixed;
@@ -343,11 +342,11 @@ section {
     transition: 0.3s;
     z-index: 999;
 }
- 
+
 #arriba:hover {
     transform: scale(1.1);
 }
- 
+
 /* WHATSAPP FLOTANTE */
 .whatsapp {
     position: fixed;
@@ -367,11 +366,11 @@ section {
     transition: 0.3s;
     z-index: 999;
 }
- 
+
 .whatsapp:hover {
     transform: scale(1.15);
 }
- 
+
 /* FOOTER */
 footer {
     background: #ffb6c1;
@@ -381,7 +380,7 @@ footer {
     color: #6b2d2d;
     font-weight: bold;
 }
- 
+
 /* VISOR DE GALERÍA */
 .visor {
     display: none;
@@ -395,13 +394,13 @@ footer {
     align-items: center;
     z-index: 5000;
 }
- 
+
 .visor img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 15px;
 }
- 
+
 #cerrar-visor {
     position: absolute;
     top: 20px;
@@ -410,25 +409,25 @@ footer {
     font-size: 40px;
     cursor: pointer;
 }
- 
+
 /* =====================
    RESPONSIVE / MOBILE
    ===================== */
 @media screen and (max-width: 768px) {
- 
+
     .hero h2 {
         font-size: 2rem;
     }
- 
+
     .card {
         width: 90%;
         max-width: 320px;
     }
- 
+
     .galeria img {
         height: auto;
     }
- 
+
     /* Mostrar botones hamburguesa */
     .abrir-menu,
     .cerrar-menu {
@@ -438,16 +437,16 @@ footer {
         cursor: pointer;
         font-size: 28px;
     }
- 
+
     .abrir-menu {
         color: #6b2d2d;
         margin: auto;
     }
- 
+
     .cerrar-menu {
         color: #6b2d2d;
     }
- 
+
     /* Menú lateral */
     .nav {
         opacity: 0;
@@ -467,20 +466,42 @@ footer {
         transition: 0.3s;
         z-index: 2000;
     }
- 
+
     .nav.visible {
         opacity: 1;
         visibility: visible;
     }
- 
+
     .nav-list {
         flex-direction: column;
         align-items: flex-end;
     }
- 
+
     .nav-list a {
         color: #6b2d2d;
         font-size: 18px;
     }
- 
+
+}
+
+/* HEADER COMPACTO AL HACER SCROLL */
+header.compacto {
+    padding: 8px 20px;
+}
+
+header.compacto h1 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+header.compacto #frase {
+    display: none;
+}
+
+header.compacto .propaganda-img {
+    display: none;
+}
+
+header.compacto .abrir-menu {
+    font-size: 22px;
 }
